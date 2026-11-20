@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-11-20T16:44:16.889601+00:00",
+  "status": "CONFIGURED_RUNTIME_BLOCKED",
+  "backendCompile": "PASS: 173 main Java sources",
+  "smtpConfigurationChecks": {
+    "passed": 13,
+    "total": 13,
+    "scope": "Actual SMTP adapter defaults, real MailHog profile YAML, outbox enabled, production rejection of insecure SMTP; no sockets opened"
+  },
+  "powershellSyntax": "PASS: start-mailhog.ps1 and run-mailhog.ps1",
+  "dockerComposeConfig": "PASS: docker compose config --quiet",
+  "mailhogContainer": "NOT STARTED: Docker Engine named pipe access denied in execution environment",
+  "smtpDelivery": "NOT TESTED",
+  "otpEndToEnd": "NOT TESTED",
+  "launchCommand": ".\\backend\\run-mailhog.ps1 -Port 18080"
+}

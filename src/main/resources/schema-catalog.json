@@ -1,0 +1,631 @@
+[
+  {
+    "table": "organization",
+    "columns": [
+      "id",
+      "parent_id",
+      "org_code",
+      "org_name",
+      "org_type",
+      "description",
+      "status",
+      "created_at",
+      "updated_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "person",
+    "columns": [
+      "id",
+      "person_code",
+      "display_name",
+      "email",
+      "phone",
+      "date_of_birth",
+      "status",
+      "created_at",
+      "updated_at"
+    ],
+    "required": [
+      "display_name",
+      "status"
+    ]
+  },
+  {
+    "table": "identity",
+    "columns": [
+      "id",
+      "person_id",
+      "subject_id",
+      "identifier",
+      "identity_type",
+      "status",
+      "created_at",
+      "updated_at"
+    ],
+    "required": [
+      "identity_type",
+      "person_id",
+      "status",
+      "subject_id"
+    ]
+  },
+  {
+    "table": "org_membership",
+    "columns": [
+      "id",
+      "identity_id",
+      "organization_id",
+      "membership_type",
+      "status",
+      "joined_at",
+      "ended_at",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "account",
+    "columns": [
+      "id",
+      "identity_id",
+      "username",
+      "account_type",
+      "status",
+      "is_locked",
+      "failed_login_attempts",
+      "locked_until",
+      "lock_reason",
+      "webauthn_user_handle",
+      "last_login_at",
+      "created_at",
+      "updated_at"
+    ],
+    "required": [
+      "identity_id",
+      "is_locked",
+      "status",
+      "username"
+    ]
+  },
+  {
+    "table": "external_identity",
+    "columns": [
+      "id",
+      "identity_id",
+      "issuer",
+      "external_subject",
+      "provider",
+      "linked_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "credential",
+    "columns": [
+      "id",
+      "account_id",
+      "credential_type",
+      "credential_name",
+      "credential_identifier",
+      "secret_hash",
+      "secret_reference",
+      "certificate_fingerprint",
+      "status",
+      "registered_at",
+      "last_used_at",
+      "expires_at",
+      "revoked_at"
+    ],
+    "required": [
+      "account_id",
+      "credential_type",
+      "status"
+    ]
+  },
+  {
+    "table": "webauthn_credential",
+    "columns": [
+      "id",
+      "credential_id",
+      "webauthn_credential_id",
+      "user_handle",
+      "rp_id",
+      "public_key_cose",
+      "cose_algorithm",
+      "sign_count",
+      "aaguid",
+      "transports",
+      "backup_eligible",
+      "backup_state",
+      "attestation_format",
+      "attested_credential_data",
+      "credential_id_hash"
+    ],
+    "required": []
+  },
+  {
+    "table": "webauthn_challenge",
+    "columns": [
+      "id",
+      "account_id",
+      "challenge",
+      "ceremony_type",
+      "rp_id",
+      "user_verification",
+      "expires_at",
+      "consumed_at",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "totp_credential",
+    "columns": [
+      "id",
+      "credential_id",
+      "encrypted_secret",
+      "encryption_key_id",
+      "algorithm",
+      "digits",
+      "period_seconds",
+      "verified_at",
+      "last_accepted_step"
+    ],
+    "required": []
+  },
+  {
+    "table": "recovery_code",
+    "columns": [
+      "id",
+      "account_id",
+      "code_hash",
+      "created_at",
+      "used_at",
+      "revoked_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "account_activation_token",
+    "columns": [
+      "id",
+      "account_id",
+      "token_hash",
+      "purpose",
+      "expires_at",
+      "consumed_at",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "org_role",
+    "columns": [
+      "id",
+      "role_code",
+      "role_name",
+      "description",
+      "is_active"
+    ],
+    "required": []
+  },
+  {
+    "table": "org_role_assignment",
+    "columns": [
+      "id",
+      "membership_id",
+      "identity_id",
+      "organization_id",
+      "org_role_id",
+      "assigned_by",
+      "valid_from",
+      "valid_until",
+      "status"
+    ],
+    "required": []
+  },
+  {
+    "table": "role",
+    "columns": [
+      "id",
+      "role_code",
+      "role_name",
+      "description",
+      "is_system",
+      "is_active",
+      "created_at",
+      "updated_at"
+    ],
+    "required": [
+      "is_active",
+      "role_code"
+    ]
+  },
+  {
+    "table": "permission",
+    "columns": [
+      "id",
+      "permission_code",
+      "resource",
+      "action",
+      "description",
+      "is_active"
+    ],
+    "required": [
+      "permission_code"
+    ]
+  },
+  {
+    "table": "role_permission",
+    "columns": [
+      "id",
+      "role_id",
+      "permission_id",
+      "created_at"
+    ],
+    "required": [
+      "permission_id",
+      "role_id"
+    ]
+  },
+  {
+    "table": "account_role_assignment",
+    "columns": [
+      "id",
+      "account_id",
+      "role_id",
+      "organization_id",
+      "application_id",
+      "assigned_by",
+      "valid_from",
+      "valid_until",
+      "status",
+      "created_at"
+    ],
+    "required": [
+      "account_id",
+      "role_id",
+      "status"
+    ]
+  },
+  {
+    "table": "application",
+    "columns": [
+      "id",
+      "organization_id",
+      "client_id",
+      "client_name",
+      "client_type",
+      "protocol",
+      "client_auth_method",
+      "require_pkce",
+      "status",
+      "created_at",
+      "updated_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "client_redirect_uri",
+    "columns": [
+      "id",
+      "application_id",
+      "redirect_uri",
+      "is_active",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "client_logout_uri",
+    "columns": [
+      "id",
+      "application_id",
+      "post_logout_redirect_uri",
+      "is_active"
+    ],
+    "required": []
+  },
+  {
+    "table": "client_credential",
+    "columns": [
+      "id",
+      "application_id",
+      "credential_type",
+      "credential_name",
+      "secret_hash",
+      "secret_reference",
+      "public_key",
+      "certificate_fingerprint",
+      "expires_at",
+      "revoked_at",
+      "status",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "oidc_scope",
+    "columns": [
+      "id",
+      "scope_name",
+      "description",
+      "is_standard",
+      "is_active"
+    ],
+    "required": []
+  },
+  {
+    "table": "application_scope",
+    "columns": [
+      "id",
+      "application_id",
+      "scope_id",
+      "is_default",
+      "is_required",
+      "status"
+    ],
+    "required": []
+  },
+  {
+    "table": "client_grant_type",
+    "columns": [
+      "id",
+      "application_id",
+      "grant_type",
+      "is_enabled"
+    ],
+    "required": []
+  },
+  {
+    "table": "signing_key",
+    "columns": [
+      "id",
+      "kid",
+      "algorithm",
+      "public_jwk",
+      "private_key_ref",
+      "status",
+      "not_before",
+      "expires_at",
+      "created_at",
+      "active_slot"
+    ],
+    "required": []
+  },
+  {
+    "table": "idp_session",
+    "columns": [
+      "id",
+      "account_id",
+      "session_id_hash",
+      "status",
+      "authentication_level",
+      "amr",
+      "ip_address",
+      "user_agent",
+      "authenticated_at",
+      "last_activity_at",
+      "expires_at",
+      "revoked_at"
+    ],
+    "required": [
+      "account_id",
+      "expires_at",
+      "session_id_hash",
+      "status"
+    ]
+  },
+  {
+    "table": "session_client",
+    "columns": [
+      "id",
+      "session_id",
+      "application_id",
+      "joined_at",
+      "logged_out_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "authentication_event",
+    "columns": [
+      "id",
+      "identity_id",
+      "account_id",
+      "application_id",
+      "credential_id",
+      "authentication_method",
+      "event_type",
+      "result",
+      "failure_reason_code",
+      "ip_address",
+      "user_agent",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "authorization_code",
+    "columns": [
+      "id",
+      "application_id",
+      "account_id",
+      "session_id",
+      "code_hash",
+      "redirect_uri",
+      "nonce",
+      "code_challenge",
+      "code_challenge_method",
+      "expires_at",
+      "consumed_at",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "authorization_code_scope",
+    "columns": [
+      "id",
+      "authorization_code_id",
+      "scope_id"
+    ],
+    "required": []
+  },
+  {
+    "table": "refresh_token",
+    "columns": [
+      "id",
+      "account_id",
+      "application_id",
+      "session_id",
+      "token_hash",
+      "family_id",
+      "replaced_by_token_id",
+      "status",
+      "issued_at",
+      "expires_at",
+      "consumed_at",
+      "revoked_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "refresh_token_scope",
+    "columns": [
+      "id",
+      "refresh_token_id",
+      "scope_id"
+    ],
+    "required": []
+  },
+  {
+    "table": "user_consent",
+    "columns": [
+      "id",
+      "identity_id",
+      "account_id",
+      "application_id",
+      "status",
+      "granted_at",
+      "revoked_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "user_consent_scope",
+    "columns": [
+      "id",
+      "user_consent_id",
+      "scope_id",
+      "granted_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "security_policy",
+    "columns": [
+      "id",
+      "organization_id",
+      "application_id",
+      "policy_type",
+      "policy_name",
+      "policy_config",
+      "priority",
+      "status",
+      "updated_by",
+      "updated_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "audit_log",
+    "columns": [
+      "id",
+      "actor_account_id",
+      "event_type",
+      "action",
+      "resource_type",
+      "resource_id",
+      "result",
+      "ip_address",
+      "correlation_id",
+      "metadata",
+      "created_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "smart_card_credential",
+    "columns": [
+      "id",
+      "credential_id",
+      "card_identifier",
+      "public_key_spki",
+      "algorithm",
+      "transport",
+      "status",
+      "created_at"
+    ],
+    "required": [
+      "algorithm",
+      "card_identifier",
+      "credential_id",
+      "public_key_spki",
+      "status",
+      "transport"
+    ]
+  },
+  {
+    "table": "smart_card_challenge",
+    "columns": [
+      "id",
+      "account_id",
+      "credential_id",
+      "session_id",
+      "challenge_hash",
+      "challenge_payload",
+      "expires_at",
+      "consumed_at",
+      "created_at"
+    ],
+    "required": [
+      "account_id",
+      "challenge_hash",
+      "challenge_payload",
+      "credential_id",
+      "expires_at"
+    ]
+  },
+  {
+    "table": "authentication_transaction",
+    "columns": [
+      "id",
+      "account_id",
+      "required_acr",
+      "completed_amr",
+      "oidc_context_json",
+      "expires_at",
+      "created_at",
+      "transaction_token_hash",
+      "failed_attempts",
+      "consumed_at"
+    ],
+    "required": []
+  },
+  {
+    "table": "outbox_event",
+    "columns": [
+      "id",
+      "event_type",
+      "payload",
+      "status",
+      "attempts",
+      "next_attempt_at",
+      "created_at"
+    ],
+    "required": []
+  }
+]

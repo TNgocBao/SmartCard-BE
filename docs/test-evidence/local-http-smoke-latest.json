@@ -1,0 +1,48 @@
+{
+  "recordedAt": "2026-11-20T15:38:41.180938+00:00",
+  "sourceSha256": "2c9a7a7271c9fd1cbf1ecc00ce9436c19f5f1dfffbd65ad7c3255e7c595d4686",
+  "baseUrl": "http://127.0.0.1:18080",
+  "scope": "HTTP against running cached Spring Boot backend and actual local MySQL; public endpoints, auth rejection, validation and optional password first step. No full business regression or card test.",
+  "cases": [
+    {
+      "case": "Status identifies KMA service as UP",
+      "passed": true,
+      "httpStatus": 200
+    },
+    {
+      "case": "Database readiness with actual MySQL",
+      "passed": true,
+      "httpStatus": 200
+    },
+    {
+      "case": "Anonymous profile access is denied",
+      "passed": true,
+      "httpStatus": 401
+    },
+    {
+      "case": "Authentication error has request ID and no-store",
+      "passed": true,
+      "httpStatus": 401
+    },
+    {
+      "case": "JWKS exposes public keys without RSA private parameters",
+      "passed": true,
+      "httpStatus": 200
+    },
+    {
+      "case": "Missing login fields produce safe validation response",
+      "passed": true,
+      "httpStatus": 400
+    },
+    {
+      "case": "Malformed bearer token is rejected",
+      "passed": true,
+      "httpStatus": 401
+    },
+    {
+      "case": "Admin password reaches the expected authentication step: SESSION_ISSUED",
+      "passed": true,
+      "httpStatus": 200
+    }
+  ]
+}

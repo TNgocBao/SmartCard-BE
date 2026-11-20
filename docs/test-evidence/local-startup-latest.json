@@ -1,0 +1,24 @@
+{
+  "recordedAt": "2026-11-20T15:40:08.413945+00:00",
+  "sourceSha256": "2c9a7a7271c9fd1cbf1ecc00ce9436c19f5f1dfffbd65ad7c3255e7c595d4686",
+  "status": "PASS_STARTUP_AND_LOCAL_HTTP_SMOKE",
+  "runtime": "cached compatibility, Spring Boot 3.2.5, JDK 21",
+  "baseUrl": "http://127.0.0.1:18080",
+  "mysql": "8.4; schema kma_idp; dedicated app user",
+  "flywayMigrationsValidated": 4,
+  "jpaEntityManagerInitialized": true,
+  "httpSmokePassed": 8,
+  "feConnection": "Observed Backend: UP in existing Swing window at 127.0.0.1:18080",
+  "stoppedAfterVerification": true,
+  "stopMethod": "Ctrl+C to the exact exec session started for this verification; HTTP connection refused afterwards",
+  "port8080": "Already in use; existing owner was not stopped",
+  "limitations": [
+    "Cached Flyway warns MySQL 8.4 is newer than its tested support",
+    "Cached runtime lacks Actuator health; /api/v1/health provides DB readiness",
+    "Not a full business regression, native simulator or real-card verification"
+  ],
+  "launcherSha256": {
+    "backend\\run.ps1": "77e4efa960329536af97485fdd8f024476743935415bbb487e9cbc53732e38d7",
+    "frontend\\run.ps1": "16fd033fec827f8e51ce27f8ddceb404bc155aed97a2312f93aa8ced0376f5dc"
+  }
+}

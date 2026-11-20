@@ -1,0 +1,18 @@
+{
+  "recordedAt": "2026-11-20T15:19:13.533987+00:00",
+  "scope": "Standalone JDBC setup/repair only; Spring Boot was not run by this repair check",
+  "validationChecksPassed": 15,
+  "applicationLogin": "PASS",
+  "database": "kma_idp",
+  "clientHost": "172.17.0.1",
+  "query": "SELECT 1",
+  "dataPreserved": true,
+  "credentialFileReplaced": false,
+  "rootUsedByBackend": false,
+  "backendStartup": "BLOCKED_BY_AUTOMATIC_APPROVAL_FOR_EXTERNAL_TELEMETRY",
+  "scriptSha256": {
+    "tools/InitializeDatabase.java": "3d4e13067e218bde72fef965eaa68da64965644b34813b9da7aa71f35e932e36",
+    "tools/DatabaseSetupChecks.java": "03ba28281b121241e3a21fbb7a5b6dcf2cf34370fd62c4831f808583e24fc2fb",
+    "setup-database.ps1": "2a5bf5ecb7a115c13a7d39ba30e20c83019df487e156d72cc6eb898d919b8528"
+  }
+}

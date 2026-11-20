@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-11-20T15:40:08.413945+00:00",
+  "status": "STARTUP_AND_HTTP_SMOKE_PASS_FULL_REGRESSION_PENDING",
+  "sourceSha256": "2c9a7a7271c9fd1cbf1ecc00ce9436c19f5f1dfffbd65ad7c3255e7c595d4686",
+  "lastVerifiedTotalChecks": 241,
+  "lastVerifiedRecordedAt": "2026-11-19T17:04:01.551729200Z",
+  "currentBusinessTestsVerified": false,
+  "staticCompilation": "PASS: 173 main files in target/cached-runtime/classes",
+  "architecture": "PASS: 32 original ERD tables, 41 entities, layer boundaries",
+  "modelAudit": "PASS: 897 attribute occurrences",
+  "reason": "User authorized telemetry destination; local backend startup and HTTP smoke completed. Historical business-suite totals have not been rerun on current source.",
+  "pendingGroups": [
+    "Canonical RBAC and anti-escalation",
+    "Organization/application scope and assignment validity",
+    "Privileged credential protection",
+    "WebAuthn zero-counter ceremonies",
+    "Outbox fencing after lease recovery",
+    "FE-BE regression with role changes"
+  ],
+  "isolatedExceptionChecks": {
+    "passed": 56,
+    "recordedAt": "2026-11-20T13:29:45.287806400Z",
+    "scope": "Standalone MockMvc/servlet only; no Spring Boot, database, SMTP, or sockets",
+    "note": "Prior-source report; POM changed to declare CBOR directly. Not rerun for this startup fix."
+  },
+  "note": "The standalone error-contract tests use an explicit minimal classpath and do not run the previously blocked Spring Boot business suite. Its approval block is not bypassed.",
+  "webAuthnStartup": {
+    "isolatedChecksPassed": 4,
+    "ideProblemBytecodeDetected": false,
+    "report": "webauthn-startup-latest.json"
+  },
+  "localStartup": "PASS with MySQL 8.4 and 4 validated migrations",
+  "localHttpSmokePassed": 8,
+  "serverStoppedAfterVerification": true,
+  "localStartupReport": "local-startup-latest.json"
+}

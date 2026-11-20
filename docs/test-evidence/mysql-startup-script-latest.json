@@ -1,0 +1,43 @@
+﻿{
+    "scope":  "Docker, Read-Host and ACL mocked; real temporary-file I/O and cleanup with nonsensitive fixed fixture; no MySQL, Docker runtime or actual Windows ACL enforcement verified",
+    "scriptSha256":  {
+                         "start-mysql.ps1":  "AE9D3A74F0D545BC143675D126D2C064538D7E32FEB82D4817A3D11A1740E48F",
+                         "MySqlLocal.ps1":  "4101CB7DB9CFFE035664DDACACABCD9A3D1BA21CD849C83D9EF8C43C0D3783A6",
+                         "Test-MySqlStartup.ps1":  "71BFAB983DE4094721E85A845F951A7DFE579BD815C6819547272A333EE17375"
+                     },
+    "cases":  [
+                  {
+                      "case":  "Missing password is diagnosed without changing container",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "Repair preserves failed container and volume while passing password explicitly",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "Healthy configured container starts without recreation",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "Unrelated container is never modified",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "Repair requires the exact uninitialized-database error",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "Docker run failure still removes secret file",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "ACL verification failure blocks secret transmission and container changes",
+                      "passed":  true
+                  },
+                  {
+                      "case":  "Short password cannot recreate container",
+                      "passed":  true
+                  }
+              ],
+    "recordedAt":  "2026-11-20T15:11:09.5779402Z"
+}

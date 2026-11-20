@@ -1,0 +1,15 @@
+# Activate together with local: SPRING_PROFILES_ACTIVE=local,mailhog
+# The backend runs on the Windows host; Docker only runs the mail catcher.
+app:
+  outbox:
+    enabled: true
+    poll-ms: 1000
+  smtp:
+    host: 127.0.0.1
+    port: 1025
+    from: no-reply@kma.local
+    username: ""
+    password: ""
+    auth: false
+    starttls-enabled: false
+    starttls-required: false

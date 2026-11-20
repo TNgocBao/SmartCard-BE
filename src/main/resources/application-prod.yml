@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+app:
+  allow-simulator: false
+server:
+  address: ${BIND_ADDRESS:127.0.0.1}
+  ssl:
+    enabled: true
+    key-store: ${TLS_KEYSTORE}
+    key-store-password: ${TLS_KEYSTORE_PASSWORD}
+    key-store-type: PKCS12

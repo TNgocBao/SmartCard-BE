@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-11-20T16:46:14.826384+00:00",
+  "status": "PASS_COMPILE_ONLY",
+  "sourceSha256": "10d605a88629bbcb8fa26a157c59c71c5faf3da90a85ff0eac6fd21581f02fd4",
+  "mainFiles": 173,
+  "classesDirectory": "target/cached-runtime/classes",
+  "dependencyTypesVerified": [
+    "com/fasterxml/jackson/dataformat/cbor/CBORFactory.class",
+    "com/fasterxml/jackson/databind/ObjectMapper.class",
+    "com/webauthn4j/WebAuthnManager.class"
+  ],
+  "springBootExecuted": false
+}

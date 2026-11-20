@@ -1,0 +1,8 @@
+{
+  "recordedAt": "2026-11-20T13:31:46.800451+00:00",
+  "status": "PASS_COMPILE_ONLY",
+  "sourceSha256": "20f5a1f8516cee495fa5c3a878a1dfb630a8426678216ccfe6dc09c009be572a",
+  "mainFiles": 171,
+  "standaloneTestFiles": 5,
+  "businessTestsExecuted": false
+}

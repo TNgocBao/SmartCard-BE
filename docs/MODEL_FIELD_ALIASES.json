@@ -1,0 +1,84 @@
+{
+  "organization": {
+    "code": "org_code",
+    "name": "org_name",
+    "organization_type": "org_type"
+  },
+  "person": {
+    "full_name": "display_name"
+  },
+  "external_identity": {
+    "created_at": "linked_at"
+  },
+  "org_membership": {
+    "valid_from": "joined_at",
+    "valid_to": "ended_at"
+  },
+  "org_role": {
+    "code": "role_code",
+    "name": "role_name",
+    "status": "is_active"
+  },
+  "org_role_assignment": {
+    "valid_to": "valid_until"
+  },
+  "role": {
+    "code": "role_code",
+    "name": "role_name",
+    "is_system_role": "is_system",
+    "status": "is_active"
+  },
+  "permission": {
+    "code": "permission_code",
+    "status": "is_active"
+  },
+  "account_role_assignment": {
+    "valid_to": "valid_until"
+  },
+  "application": {
+    "name": "client_name"
+  },
+  "client_logout_uri": {
+    "logout_uri": "post_logout_redirect_uri"
+  },
+  "oidc_scope": {
+    "name": "scope_name",
+    "status": "is_active"
+  },
+  "client_grant_type": {
+    "status": "is_enabled"
+  },
+  "credential": {
+    "display_name": "credential_name",
+    "created_at": "registered_at"
+  },
+  "webauthn_credential": {
+    "credential_id_value": "webauthn_credential_id",
+    "public_key": "public_key_cose"
+  },
+  "idp_session": {
+    "session_token_hash": "session_id_hash",
+    "created_at": "authenticated_at",
+    "last_accessed_at": "last_activity_at"
+  },
+  "session_client": {
+    "first_accessed_at": "joined_at"
+  },
+  "authentication_event": {
+    "method": "authentication_method",
+    "source_ip": "ip_address",
+    "occurred_at": "created_at"
+  },
+  "audit_log": {
+    "details": "metadata",
+    "source_ip": "ip_address",
+    "occurred_at": "created_at",
+    "metadata_json": "metadata",
+    "sanitized_details_json": "metadata"
+  },
+  "security_policy": {
+    "configuration": "policy_config",
+    "policy_config_json": "policy_config",
+    "configuration_json": "policy_config"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "recordedAt": "2026-11-20T15:38:06.306984+00:00",
+  "sourceSha256": "2c9a7a7271c9fd1cbf1ecc00ce9436c19f5f1dfffbd65ad7c3255e7c595d4686",
+  "passed": 3,
+  "scope": "Readiness controller/service with injected repository states: UP, DOWN, database exception; no Spring Boot or DB connection."
+}

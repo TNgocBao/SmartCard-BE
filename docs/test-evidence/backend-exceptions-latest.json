@@ -1,0 +1,255 @@
+{
+  "recordedAt": "2026-11-20T13:29:45.287806400Z",
+  "scope": "Standalone MockMvc/servlet only; no Spring Boot, database, SMTP, or sockets",
+  "cases": [
+    {
+      "passed": true,
+      "case": "POST /probe/body returns 400"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "Validation identifies field names without rejected values"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns 400"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns 400"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns 200"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/integer returns 400"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/integer does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/integer returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/integer?value=not-a-number returns 400"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/integer?value=not-a-number does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/integer?value=not-a-number returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/header returns 400"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/header does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/header returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns 415"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "POST /probe/body returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "DELETE /probe/body returns 405"
+    },
+    {
+      "passed": true,
+      "case": "DELETE /probe/body does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "DELETE /probe/body returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "405 retains the allowed HTTP method"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/known returns 423"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/known does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/known returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/conflict returns 409"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/conflict does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/conflict returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/concurrent returns 409"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/concurrent does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/concurrent returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/unavailable returns 503"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/unavailable does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/unavailable returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/server returns 500"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/server does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/server returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/denied returns 403"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/denied does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/denied returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/missing returns 404"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/missing does not expose exception details"
+    },
+    {
+      "passed": true,
+      "case": "GET /probe/missing returns stable code and request ID"
+    },
+    {
+      "passed": true,
+      "case": "Unsupported response format returns structured 406"
+    },
+    {
+      "passed": true,
+      "case": "Unexpected filter failure is sanitized JSON 500"
+    },
+    {
+      "passed": true,
+      "case": "Invalid error status and code cannot expose arbitrary text"
+    },
+    {
+      "passed": true,
+      "case": "Filter error 401 has the same code/requestId schema"
+    },
+    {
+      "passed": true,
+      "case": "Filter error 403 has the same code/requestId schema"
+    },
+    {
+      "passed": true,
+      "case": "Filter error 429 has the same code/requestId schema"
+    },
+    {
+      "passed": true,
+      "case": "Rate limit returns structured 429 with Retry-After"
+    }
+  ],
+  "sourceSha256": "20f5a1f8516cee495fa5c3a878a1dfb630a8426678216ccfe6dc09c009be572a",
+  "dependencies": [
+    "spring-aop-6.1.6.jar",
+    "spring-beans-6.1.6.jar",
+    "spring-context-6.1.6.jar",
+    "spring-core-6.1.6.jar",
+    "spring-expression-6.1.6.jar",
+    "spring-jcl-6.1.6.jar",
+    "spring-web-6.1.6.jar",
+    "spring-webmvc-6.1.6.jar",
+    "spring-test-6.1.6.jar",
+    "spring-tx-6.1.6.jar",
+    "spring-security-core-6.2.4.jar",
+    "jackson-annotations-2.17.2.jar",
+    "jackson-core-2.17.2.jar",
+    "jackson-databind-2.17.2.jar",
+    "micrometer-commons-1.13.6.jar",
+    "micrometer-observation-1.13.6.jar",
+    "jakarta.validation-api-3.0.2.jar",
+    "hibernate-validator-8.0.1.Final.jar",
+    "jboss-logging-3.5.3.Final.jar",
+    "classmate-1.7.0.jar",
+    "tomcat-embed-core-10.1.31.jar",
+    "slf4j-api-2.0.16.jar"
+  ]
+}

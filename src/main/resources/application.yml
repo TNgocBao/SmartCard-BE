@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: kma-idp
+  profiles:
+    default: local
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+server:
+  address: ${BIND_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+app:
+  webauthn:
+    rp-id: ${WEBAUTHN_RP_ID:localhost}
+    origin: ${WEBAUTHN_ORIGIN:http://localhost:8080}
+  session:
+    idle-seconds: ${SESSION_IDLE_SECONDS:1800}
+  outbox:
+    enabled: ${OUTBOX_ENABLED:false}
+  smtp:
+    host: ${SMTP_HOST:}
+    port: ${SMTP_PORT:587}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+    from: ${SMTP_FROM:}
+    auth: ${SMTP_AUTH:true}
+    starttls-enabled: ${SMTP_STARTTLS_ENABLED:true}
+    starttls-required: ${SMTP_STARTTLS_REQUIRED:true}
+  crypto:
+    master-key: ${APP_ENCRYPTION_KEY_B64:}
+  issuer: ${IDP_ISSUER:http://127.0.0.1:8080}
+  bootstrap-password: ${BOOTSTRAP_PASSWORD:}
+  signing-keystore: ${SIGNING_KEYSTORE:}
+  signing-password: ${SIGNING_PASSWORD:}
+  signing-alias: ${SIGNING_ALIAS:idp}

@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-11-20T15:38:06.303976+00:00",
+  "sourceSha256": "2c9a7a7271c9fd1cbf1ecc00ce9436c19f5f1dfffbd65ad7c3255e7c595d4686",
+  "passed": 4,
+  "scope": "Isolated WebAuthnVerifier constructor, javac-output origin, CBOR roundtrip and production HTTP rejection. No Spring Boot, database, network server or full business suite.",
+  "classpathJars": [
+    "jackson-annotations-2.17.2.jar",
+    "jackson-core-2.17.2.jar",
+    "jackson-databind-2.17.2.jar",
+    "jackson-dataformat-cbor-2.15.4.jar",
+    "jackson-dataformat-toml-2.17.2.jar",
+    "jackson-dataformat-xml-2.15.4.jar",
+    "jackson-dataformat-yaml-2.15.4.jar",
+    "jackson-datatype-jdk8-2.17.2.jar",
+    "jackson-datatype-jsr310-2.17.2.jar",
+    "jackson-module-parameter-names-2.17.2.jar",
+    "webauthn4j-core-0.24.0.RELEASE.jar",
+    "webauthn4j-util-0.24.0.RELEASE.jar",
+    "slf4j-api-2.0.16.jar",
+    "spring-beans-6.1.6.jar",
+    "spring-context-6.1.6.jar",
+    "spring-core-6.1.6.jar",
+    "spring-jcl-6.1.6.jar",
+    "spring-jdbc-6.1.6.jar",
+    "spring-tx-6.1.6.jar",
+    "spring-web-6.1.6.jar"
+  ]
+}
