@@ -1,6 +1,6 @@
 # Các case mới chờ chạy BE
 
-Trạng thái: BLOCKED_BY_AUTOMATIC_APPROVAL. Đã biên dịch main BE, mã test và mã tích hợp FE; chưa có bằng chứng các case mới chạy thành công. Kết quả 241 kiểm tra trước đây là lịch sử của dấu vân tay nguồn khác.
+Trạng thái cập nhật 25/11/2026: bộ regression hiện tại đã PASS 291 kiểm tra (cached compatibility, H2/MockMvc). Bảng bên dưới là danh mục đã từng chờ kiểm chứng; xem TEST_CASE_RESULTS.md và frontend/docs/test-evidence/card-demo-contract-latest.json để biết case thực thi. Các kết quả này không chứng minh thiết bị thật, MySQL, HTTP/trình duyệt hoặc Maven release build.
 
 | Nhóm | Case cần xác minh | Kết quả kỳ vọng |
 |---|---|---|

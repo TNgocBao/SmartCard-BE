@@ -2,9 +2,7 @@
 
 ## Kết quả kiểm thử tự động gần nhất
 
-**KẾT QUẢ LỊCH SỬ:** mã hiện tại đã khác dấu vân tay của lần test này. Không dùng các PASS bên dưới để kết luận phiên bản hiện tại đã qua test. Xem `docs/test-evidence/backend-current-status.json`.
-
-Thời điểm UTC: `2026-11-19T17:04:01.551729200Z`. Chế độ: `cached-compatibility`. Tổng kiểm tra: **241**; số request được ghi riêng: **237**.
+Thời điểm UTC: `2026-11-25T14:51:38.488231900Z`. Chế độ: `cached-compatibility`. Tổng kiểm tra: **291**; số request được ghi riêng: **287**.
 
 Môi trường: MockMvc + real Spring Security filters; H2 in memory. Đây là kết quả của danh mục đã viết, không có nghĩa mọi case có thể tồn tại đều đã kiểm tra.
 
@@ -159,162 +157,145 @@ Môi trường: MockMvc + real Spring Security filters; H2 in memory. Đây là 
 | TC147 | `POST /api/v1/auth/enrollment/totp/verify` | 200 | 200 | PASS |
 | TC148 | `POST /api/v1/auth/enrollment/totp/verify` | 410 | 410 | PASS |
 | TC149 | `DELETE /api/v1/me/totp` | 409 | 409 | PASS |
-| TC150 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
-| TC151 | `POST /api/v1/me/webauthn/registration/verify` | 401 | 401 | PASS |
-| TC152 | `POST /api/v1/me/webauthn/registration/verify` | 410 | 410 | PASS |
-| TC153 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
-| TC154 | `POST /api/v1/me/webauthn/registration/verify` | 401 | 401 | PASS |
-| TC155 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
-| TC156 | `POST /api/v1/me/webauthn/registration/verify` | 200 | 200 | PASS |
-| TC157 | `POST /api/v1/me/webauthn/registration/verify` | 410 | 410 | PASS |
-| TC158 | `ASSERT WebAuthn COSE public key and attested data persisted` | True | True | PASS |
-| TC159 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
-| TC160 | `POST /api/v1/me/webauthn/registration/verify` | 409 | 409 | PASS |
-| TC161 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC162 | `ASSERT WebAuthn requests required UV` | True | True | PASS |
-| TC163 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC164 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC165 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC166 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC167 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC168 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC169 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC170 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC171 | `POST /api/v1/auth/webauthn/verify` | 200 | 200 | PASS |
-| TC172 | `ASSERT WebAuthn UV session has AAL2` | True | True | PASS |
-| TC173 | `GET /api/v1/me` | 200 | 200 | PASS |
-| TC174 | `POST /api/v1/auth/webauthn/verify` | 410 | 410 | PASS |
-| TC175 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC176 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC177 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC178 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC179 | `POST /api/v1/auth/webauthn/options` | 401 | 401 | PASS |
-| TC180 | `POST /api/v1/auth/webauthn/options` | 401 | 401 | PASS |
-| TC181 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC182 | `POST /api/v1/auth/webauthn/verify` | 410 | 410 | PASS |
-| TC183 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC184 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC185 | `POST /api/v1/auth/webauthn/verify` | 410 | 410 | PASS |
-| TC186 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC187 | `ASSERT Concurrent WebAuthn proof yields exactly one session and one consumed challenge` | True | True | PASS |
-| TC188 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
-| TC189 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
-| TC190 | `POST /api/v1/auth/webauthn/options` | 401 | 401 | PASS |
-| TC191 | `POST /api/v1/auth/webauthn/options` | 429 | 429 | PASS |
-| TC192 | `ASSERT Outbox successful delivery is not dispatched twice` | True | True | PASS |
-| TC193 | `ASSERT Outbox failure schedules bounded retry` | True | True | PASS |
-| TC194 | `ASSERT Outbox cannot claim before backoff elapsed` | True | True | PASS |
-| TC195 | `ASSERT Outbox becomes DEAD after five delivery failures` | True | True | PASS |
-| TC196 | `ASSERT DEAD outbox item cannot be claimed` | True | True | PASS |
-| TC197 | `ASSERT Only one worker claims an outbox item` | True | True | PASS |
-| TC198 | `ASSERT Expired worker lease can be recovered` | True | True | PASS |
-| TC199 | `ASSERT Expired final lease does not cause unlimited retries` | True | True | PASS |
-| TC200 | `ASSERT Outbox stores encrypted notification bodies only` | True | True | PASS |
-| TC201 | `GET /api/v1/me/credentials` | 200 | 200 | PASS |
-| TC202 | `ASSERT Own credential API excludes all secrets and public-key payloads` | True | True | PASS |
-| TC203 | `DELETE /api/v1/me/credentials/{id}` | 404 | 404 | PASS |
-| TC204 | `DELETE /api/v1/me/credentials/{id}` | 403 | 403 | PASS |
-| TC205 | `DELETE /api/v1/me/credentials/{id}` | 200 | 200 | PASS |
-| TC206 | `GET /api/v1/me` | 401 | 401 | PASS |
-| TC207 | `GET /api/v1/me` | 401 | 401 | PASS |
-| TC208 | `ASSERT Self revoke updates credential state` | True | True | PASS |
-| TC209 | `DELETE /api/v1/me/credentials/{id}` | 409 | 409 | PASS |
-| TC210 | `GET /api/v1/me` | 200 | 200 | PASS |
-| TC211 | `POST /api/v1/logout` | 200 | 200 | PASS |
-| TC212 | `GET /api/v1/me` | 401 | 401 | PASS |
-| TC213 | `GET /api/v1/signing-keys` | 200 | 200 | PASS |
-| TC214 | `ASSERT Signing key metadata excludes private references` | True | True | PASS |
-| TC215 | `GET /api/v1/signing-keys` | 403 | 403 | PASS |
-| TC216 | `POST /api/v1/signing-keys/prepare` | 403 | 403 | PASS |
-| TC217 | `POST /api/v1/signing-keys/prepare` | 400 | 400 | PASS |
-| TC218 | `POST /api/v1/signing-keys/prepare` | 201 | 201 | PASS |
-| TC219 | `GET /oauth2/jwks` | 200 | 200 | PASS |
-| TC220 | `ASSERT NEXT key pre-published alongside active key` | True | True | PASS |
-| TC221 | `ASSERT JWKS contains public parameters only` | True | True | PASS |
-| TC222 | `POST /api/v1/signing-keys/rotate` | 400 | 400 | PASS |
-| TC223 | `POST /api/v1/signing-keys/rotate` | 201 | 201 | PASS |
-| TC224 | `ASSERT Rotation changes active kid` | True | True | PASS |
-| TC225 | `GET /api/v1/me` | 200 | 200 | PASS |
-| TC226 | `ASSERT New tokens use rotated signing key` | True | True | PASS |
-| TC227 | `POST /api/v1/signing-keys/rotate` | 409 | 409 | PASS |
-| TC228 | `DELETE /api/v1/signing-keys/{id}` | 409 | 409 | PASS |
-| TC229 | `GET /api/v1/me` | 401 | 401 | PASS |
-| TC230 | `GET /api/v1/me` | 200 | 200 | PASS |
-| TC231 | `GET /oauth2/jwks` | 200 | 200 | PASS |
-| TC232 | `ASSERT Retired key disappears after overlap expiry` | True | True | PASS |
-| TC233 | `DELETE /api/v1/signing-keys/{id}` | 200 | 200 | PASS |
-| TC234 | `GET /api/v1/me` | 401 | 401 | PASS |
-| TC235 | `ASSERT Emergency retired-key revocation revokes every active session` | True | True | PASS |
-| TC236 | `GET /api/v1/me` | 200 | 200 | PASS |
-| TC237 | `POST /api/v1/logout` | 200 | 200 | PASS |
+| TC150 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC151 | `GET /api/v1/permissions` | 200 | 200 | PASS |
+| TC152 | `ASSERT Permission catalog offers actual enforced codes only` | True | True | PASS |
+| TC153 | `GET /api/v1/roles?size=101` | 400 | 400 | PASS |
+| TC154 | `POST /api/v1/roles` | 201 | 201 | PASS |
+| TC155 | `POST /api/v1/roles` | 409 | 409 | PASS |
+| TC156 | `PATCH /api/v1/roles/{id}` | 409 | 409 | PASS |
+| TC157 | `PUT /api/v1/roles/{id}/permissions` | 409 | 409 | PASS |
+| TC158 | `PUT /api/v1/roles/{id}/permissions` | 200 | 200 | PASS |
+| TC159 | `PUT /api/v1/roles/{id}/permissions` | 400 | 400 | PASS |
+| TC160 | `POST /api/v1/accounts/{id}/role-assignments` | 201 | 201 | PASS |
+| TC161 | `POST /api/v1/accounts/{id}/role-assignments` | 409 | 409 | PASS |
+| TC162 | `POST /api/v1/accounts/{id}/role-assignments` | 400 | 400 | PASS |
+| TC163 | `POST /api/v1/accounts/{id}/role-assignments` | 400 | 400 | PASS |
+| TC164 | `GET /api/v1/roles` | 200 | 200 | PASS |
+| TC165 | `POST /api/v1/roles` | 403 | 403 | PASS |
+| TC166 | `PUT /api/v1/roles/{id}/permissions` | 403 | 403 | PASS |
+| TC167 | `POST /api/v1/accounts/{id}/role-assignments` | 403 | 403 | PASS |
+| TC168 | `POST /api/v1/accounts/{id}/lock` | 403 | 403 | PASS |
+| TC169 | `DELETE /api/v1/accounts/credentials/{id}` | 403 | 403 | PASS |
+| TC170 | `POST /api/v1/accounts` | 200 | 200 | PASS |
+| TC171 | `POST /api/v1/accounts/{id}/lock` | 200 | 200 | PASS |
+| TC172 | `POST /api/v1/accounts/{id}/unlock` | 200 | 200 | PASS |
+| TC173 | `POST /api/v1/roles` | 201 | 201 | PASS |
+| TC174 | `PUT /api/v1/roles/{id}/permissions` | 200 | 200 | PASS |
+| TC175 | `PATCH /api/v1/roles/{id}` | 403 | 403 | PASS |
+| TC176 | `POST /api/v1/accounts/{id}/role-assignments` | 403 | 403 | PASS |
+| TC177 | `DELETE /api/v1/role-assignments/{id}` | 200 | 200 | PASS |
+| TC178 | `POST /api/v1/accounts/{id}/lock` | 403 | 403 | PASS |
+| TC179 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC180 | `ASSERT Role revocation affects an existing token immediately` | True | True | PASS |
+| TC181 | `DELETE /api/v1/role-assignments/{id}` | 409 | 409 | PASS |
+| TC182 | `POST /api/v1/accounts/{id}/role-assignments` | 201 | 201 | PASS |
+| TC183 | `ASSERT Canonical scoped assignment cannot grant global rights` | True | True | PASS |
+| TC184 | `ASSERT Canonical scoped assignment matches its own organization` | True | True | PASS |
+| TC185 | `ASSERT Organization grant cannot cross into application scope` | True | True | PASS |
+| TC186 | `POST /api/v1/accounts/{id}/role-assignments` | 403 | 403 | PASS |
+| TC187 | `POST /api/v1/accounts/{id}/role-assignments` | 403 | 403 | PASS |
+| TC188 | `DELETE /api/v1/role-assignments/{id}` | 200 | 200 | PASS |
+| TC189 | `POST /api/v1/accounts/{id}/role-assignments` | 201 | 201 | PASS |
+| TC190 | `POST /api/v1/accounts/{id}/lock` | 409 | 409 | PASS |
+| TC191 | `DELETE /api/v1/role-assignments/{id}` | 200 | 200 | PASS |
+| TC192 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
+| TC193 | `POST /api/v1/me/webauthn/registration/verify` | 401 | 401 | PASS |
+| TC194 | `POST /api/v1/me/webauthn/registration/verify` | 410 | 410 | PASS |
+| TC195 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
+| TC196 | `POST /api/v1/me/webauthn/registration/verify` | 401 | 401 | PASS |
+| TC197 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
+| TC198 | `POST /api/v1/me/webauthn/registration/verify` | 200 | 200 | PASS |
+| TC199 | `POST /api/v1/me/webauthn/registration/verify` | 410 | 410 | PASS |
+| TC200 | `ASSERT WebAuthn COSE public key and attested data persisted` | True | True | PASS |
+| TC201 | `POST /api/v1/me/webauthn/registration/options` | 200 | 200 | PASS |
+| TC202 | `POST /api/v1/me/webauthn/registration/verify` | 409 | 409 | PASS |
+| TC203 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC204 | `POST /api/v1/auth/webauthn/verify` | 200 | 200 | PASS |
+| TC205 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC206 | `POST /api/v1/auth/webauthn/verify` | 200 | 200 | PASS |
+| TC207 | `ASSERT WebAuthn permits zero counters across distinct valid ceremonies` | True | True | PASS |
+| TC208 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC209 | `ASSERT WebAuthn requests required UV` | True | True | PASS |
+| TC210 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC211 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC212 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC213 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC214 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC215 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC216 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC217 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC218 | `POST /api/v1/auth/webauthn/verify` | 200 | 200 | PASS |
+| TC219 | `ASSERT WebAuthn UV session has AAL2` | True | True | PASS |
+| TC220 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC221 | `POST /api/v1/auth/webauthn/verify` | 410 | 410 | PASS |
+| TC222 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC223 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC224 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC225 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC226 | `POST /api/v1/auth/webauthn/options` | 401 | 401 | PASS |
+| TC227 | `POST /api/v1/auth/webauthn/options` | 401 | 401 | PASS |
+| TC228 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC229 | `POST /api/v1/auth/webauthn/verify` | 410 | 410 | PASS |
+| TC230 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC231 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC232 | `POST /api/v1/auth/webauthn/verify` | 410 | 410 | PASS |
+| TC233 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC234 | `ASSERT Concurrent WebAuthn proof yields exactly one session and one consumed challenge` | True | True | PASS |
+| TC235 | `POST /api/v1/auth/webauthn/options` | 200 | 200 | PASS |
+| TC236 | `POST /api/v1/auth/webauthn/verify` | 401 | 401 | PASS |
+| TC237 | `POST /api/v1/auth/webauthn/options` | 401 | 401 | PASS |
+| TC238 | `POST /api/v1/auth/webauthn/options` | 429 | 429 | PASS |
+| TC239 | `ASSERT Outbox successful delivery is not dispatched twice` | True | True | PASS |
+| TC240 | `ASSERT Outbox failure schedules bounded retry` | True | True | PASS |
+| TC241 | `ASSERT Outbox cannot claim before backoff elapsed` | True | True | PASS |
+| TC242 | `ASSERT Outbox becomes DEAD after five delivery failures` | True | True | PASS |
+| TC243 | `ASSERT DEAD outbox item cannot be claimed` | True | True | PASS |
+| TC244 | `ASSERT Only one worker claims an outbox item` | True | True | PASS |
+| TC245 | `ASSERT Expired worker lease can be recovered` | True | True | PASS |
+| TC246 | `ASSERT Expired final lease does not cause unlimited retries` | True | True | PASS |
+| TC247 | `ASSERT Recovered outbox item requires current claim version` | True | True | PASS |
+| TC248 | `ASSERT Stale worker cannot acknowledge or fail another claim` | True | True | PASS |
+| TC249 | `ASSERT Current outbox worker can acknowledge its own claim` | True | True | PASS |
+| TC250 | `ASSERT Outbox stores encrypted notification bodies only` | True | True | PASS |
+| TC251 | `GET /api/v1/me/credentials` | 200 | 200 | PASS |
+| TC252 | `ASSERT Own credential API excludes all secrets and public-key payloads` | True | True | PASS |
+| TC253 | `DELETE /api/v1/me/credentials/{id}` | 404 | 404 | PASS |
+| TC254 | `DELETE /api/v1/me/credentials/{id}` | 403 | 403 | PASS |
+| TC255 | `DELETE /api/v1/me/credentials/{id}` | 200 | 200 | PASS |
+| TC256 | `GET /api/v1/me` | 401 | 401 | PASS |
+| TC257 | `GET /api/v1/me` | 401 | 401 | PASS |
+| TC258 | `ASSERT Self revoke updates credential state` | True | True | PASS |
+| TC259 | `DELETE /api/v1/me/credentials/{id}` | 409 | 409 | PASS |
+| TC260 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC261 | `POST /api/v1/logout` | 200 | 200 | PASS |
+| TC262 | `GET /api/v1/me` | 401 | 401 | PASS |
+| TC263 | `GET /api/v1/signing-keys` | 200 | 200 | PASS |
+| TC264 | `ASSERT Signing key metadata excludes private references` | True | True | PASS |
+| TC265 | `GET /api/v1/signing-keys` | 403 | 403 | PASS |
+| TC266 | `POST /api/v1/signing-keys/prepare` | 403 | 403 | PASS |
+| TC267 | `POST /api/v1/signing-keys/prepare` | 400 | 400 | PASS |
+| TC268 | `POST /api/v1/signing-keys/prepare` | 201 | 201 | PASS |
+| TC269 | `GET /oauth2/jwks` | 200 | 200 | PASS |
+| TC270 | `ASSERT NEXT key pre-published alongside active key` | True | True | PASS |
+| TC271 | `ASSERT JWKS contains public parameters only` | True | True | PASS |
+| TC272 | `POST /api/v1/signing-keys/rotate` | 400 | 400 | PASS |
+| TC273 | `POST /api/v1/signing-keys/rotate` | 201 | 201 | PASS |
+| TC274 | `ASSERT Rotation changes active kid` | True | True | PASS |
+| TC275 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC276 | `ASSERT New tokens use rotated signing key` | True | True | PASS |
+| TC277 | `POST /api/v1/signing-keys/rotate` | 409 | 409 | PASS |
+| TC278 | `DELETE /api/v1/signing-keys/{id}` | 409 | 409 | PASS |
+| TC279 | `GET /api/v1/me` | 401 | 401 | PASS |
+| TC280 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC281 | `GET /oauth2/jwks` | 200 | 200 | PASS |
+| TC282 | `ASSERT Retired key disappears after overlap expiry` | True | True | PASS |
+| TC283 | `DELETE /api/v1/signing-keys/{id}` | 200 | 200 | PASS |
+| TC284 | `GET /api/v1/me` | 401 | 401 | PASS |
+| TC285 | `ASSERT Emergency retired-key revocation revokes every active session` | True | True | PASS |
+| TC286 | `GET /api/v1/me` | 200 | 200 | PASS |
+| TC287 | `POST /api/v1/logout` | 200 | 200 | PASS |
 
 Chưa được đánh dấu PASS bằng kết quả này: MySQL thực, SMTP/TLS/SIEM thực, Oracle Simulator chạy native, thẻ/đầu đọc thật, OIDC conformance và tải/HA/DR. Những phần này cần kết quả chạy độc lập.
 
-Dấu vân tay nguồn: `74137c1c40f1fcd24dfc59cf9258e28ef65f7f4bdebdbd847c284d7c0bce42f7`. Báo cáo máy đọc: `docs/test-evidence/backend-latest.json`; log: `docs/test-evidence/backend-latest.log`.
-
-<!-- EXCEPTION_RESULTS_START -->
-## Exception tests độc lập
-
-Thời điểm UTC: `2026-11-20T13:29:45.287806400Z`. 56 kiểm tra PASS. Scope: Standalone MockMvc/servlet only; no Spring Boot, database, SMTP, or sockets.
-
-| Case | Kết quả |
-|---|---|
-| POST /probe/body returns 400 | PASS |
-| POST /probe/body does not expose exception details | PASS |
-| POST /probe/body returns stable code and request ID | PASS |
-| Validation identifies field names without rejected values | PASS |
-| POST /probe/body returns 400 | PASS |
-| POST /probe/body does not expose exception details | PASS |
-| POST /probe/body returns stable code and request ID | PASS |
-| POST /probe/body returns 400 | PASS |
-| POST /probe/body does not expose exception details | PASS |
-| POST /probe/body returns stable code and request ID | PASS |
-| POST /probe/body returns 200 | PASS |
-| POST /probe/body does not expose exception details | PASS |
-| GET /probe/integer returns 400 | PASS |
-| GET /probe/integer does not expose exception details | PASS |
-| GET /probe/integer returns stable code and request ID | PASS |
-| GET /probe/integer?value=not-a-number returns 400 | PASS |
-| GET /probe/integer?value=not-a-number does not expose exception details | PASS |
-| GET /probe/integer?value=not-a-number returns stable code and request ID | PASS |
-| GET /probe/header returns 400 | PASS |
-| GET /probe/header does not expose exception details | PASS |
-| GET /probe/header returns stable code and request ID | PASS |
-| POST /probe/body returns 415 | PASS |
-| POST /probe/body does not expose exception details | PASS |
-| POST /probe/body returns stable code and request ID | PASS |
-| DELETE /probe/body returns 405 | PASS |
-| DELETE /probe/body does not expose exception details | PASS |
-| DELETE /probe/body returns stable code and request ID | PASS |
-| 405 retains the allowed HTTP method | PASS |
-| GET /probe/known returns 423 | PASS |
-| GET /probe/known does not expose exception details | PASS |
-| GET /probe/known returns stable code and request ID | PASS |
-| GET /probe/conflict returns 409 | PASS |
-| GET /probe/conflict does not expose exception details | PASS |
-| GET /probe/conflict returns stable code and request ID | PASS |
-| GET /probe/concurrent returns 409 | PASS |
-| GET /probe/concurrent does not expose exception details | PASS |
-| GET /probe/concurrent returns stable code and request ID | PASS |
-| GET /probe/unavailable returns 503 | PASS |
-| GET /probe/unavailable does not expose exception details | PASS |
-| GET /probe/unavailable returns stable code and request ID | PASS |
-| GET /probe/server returns 500 | PASS |
-| GET /probe/server does not expose exception details | PASS |
-| GET /probe/server returns stable code and request ID | PASS |
-| GET /probe/denied returns 403 | PASS |
-| GET /probe/denied does not expose exception details | PASS |
-| GET /probe/denied returns stable code and request ID | PASS |
-| GET /probe/missing returns 404 | PASS |
-| GET /probe/missing does not expose exception details | PASS |
-| GET /probe/missing returns stable code and request ID | PASS |
-| Unsupported response format returns structured 406 | PASS |
-| Unexpected filter failure is sanitized JSON 500 | PASS |
-| Invalid error status and code cannot expose arbitrary text | PASS |
-| Filter error 401 has the same code/requestId schema | PASS |
-| Filter error 403 has the same code/requestId schema | PASS |
-| Filter error 429 has the same code/requestId schema | PASS |
-| Rate limit returns structured 429 with Retry-After | PASS |
-
-Dấu vân tay nguồn: `20f5a1f8516cee495fa5c3a878a1dfb630a8426678216ccfe6dc09c009be572a`. JSON: `docs/test-evidence/backend-exceptions-latest.json`. Regression nghiệp vụ tổng vẫn cần kết quả riêng.
-<!-- EXCEPTION_RESULTS_END -->
+Dấu vân tay nguồn: `b5577c9ab7e1c25ba08a5c89454f3ae5869cdf60e798916f1a70020dd32a48be`. Báo cáo máy đọc: `docs/test-evidence/backend-latest.json`; log: `docs/test-evidence/backend-latest.log`.

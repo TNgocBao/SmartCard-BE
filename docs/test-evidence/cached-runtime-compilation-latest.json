@@ -1,8 +1,8 @@
 {
-  "recordedAt": "2026-11-20T16:46:14.826384+00:00",
+  "recordedAt": "2026-11-25T14:52:05.936495+00:00",
   "status": "PASS_COMPILE_ONLY",
-  "sourceSha256": "10d605a88629bbcb8fa26a157c59c71c5faf3da90a85ff0eac6fd21581f02fd4",
-  "mainFiles": 173,
+  "sourceSha256": "b5577c9ab7e1c25ba08a5c89454f3ae5869cdf60e798916f1a70020dd32a48be",
+  "mainFiles": 177,
   "classesDirectory": "target/cached-runtime/classes",
   "dependencyTypesVerified": [
     "com/fasterxml/jackson/dataformat/cbor/CBORFactory.class",

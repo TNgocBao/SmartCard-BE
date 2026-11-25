@@ -12,8 +12,10 @@ import vn.kma.idp.security.Keys;
 @RestController
 public class AuthController {
     private final AuthService auth;
-    public AuthController(AuthService auth) {
+    private final vn.kma.idp.auth.service.SmartCardProofService cardProof;
+    public AuthController(AuthService auth,vn.kma.idp.auth.service.SmartCardProofService cardProof) {
         this.auth=auth;
+        this.cardProof=cardProof;
     }
     @PostMapping("/api/v1/auth/password") Map<String,Object> password(@Valid @RequestBody Password r) {
         return auth.passwordLogin(r.username(),r.password());
@@ -22,7 +24,7 @@ public class AuthController {
         return auth.challenge(r.username(),r.cardIdentifier().toUpperCase());
     }
     @PostMapping("/api/v1/auth/smart-card/verify") Map<String,Object> verify(@Valid @RequestBody Proof r) {
-        return auth.verify(r.challengeId(),r.signature());
+        return cardProof.verify(r.challengeId(),r.signature());
     }
     @PostMapping("/api/v1/auth/refresh") Map<String,Object> refresh(@Valid @RequestBody Refresh r) {
         var result=auth.refresh(r.refreshToken());

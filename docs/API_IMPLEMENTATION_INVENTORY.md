@@ -51,3 +51,10 @@
 | GET | `/api/v1/status` | `SystemController` |
 
 Chưa có Authorization Code/PKCE, discovery, userinfo, introspection và consent workflow. Có activation, recovery, MFA và signing-key lifecycle như danh sách trên. `/oauth2/jwks` chỉ xuất public key; không có nghĩa toàn bộ OAuth2/OIDC đã triển khai.
+
+## API quản lý thẻ bổ sung
+
+- `GET /api/v1/me/smart-cards?page=0`: danh sách thẻ của mình, không trả public key/private key.
+- `GET /api/v1/me/smart-cards/history?page=0`: lịch sử CARD_PROOF và đăng nhập bằng thẻ.
+- Có thể truyền `accountId` để xem tài khoản khác khi có quyền credential.manage; bảo vệ tài khoản đặc quyền vẫn áp dụng.
+- Transport đăng ký: SOFTWARE / SIMULATOR / PCSC; SOFTWARE và SIMULATOR chỉ được đăng ký/xác thực khi bật allow-simulator.

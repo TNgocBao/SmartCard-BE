@@ -31,7 +31,7 @@ public class AccountService {
         repository.lockAccount(accountId);
         var a=repository.findAccountById(accountId);
         if(!Set.of("PENDING_ACTIVATION","ACTIVE").contains(a.get("status"))) throw new ApiException(409,"ACCOUNT_NOT_ENROLLABLE");
-        if(!Set.of("SIMULATOR","PCSC").contains(transport) || (!simulator && !"PCSC".equals(transport))) throw new ApiException(400,"INVALID_TRANSPORT");
+        if(!Set.of("SOFTWARE","SIMULATOR","PCSC").contains(transport) || (!simulator && !"PCSC".equals(transport))) throw new ApiException(400,"INVALID_TRANSPORT");
         try {
             var key=(RSAPublicKey)KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(Base64.getDecoder().decode(publicKey)));
             if(!Set.of(2048,3072,4096).contains(key.getModulus().bitLength()) || !key.getPublicExponent().equals(java.math.BigInteger.valueOf(65537))) throw new IllegalArgumentException();

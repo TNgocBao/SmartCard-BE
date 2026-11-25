@@ -26,6 +26,12 @@ for jar in repo.rglob('*.jar'):
  if not previous or version(jar)>version(previous):artifacts[artifact]=jar
 # Avoid duplicate legacy logging bindings and JUnit vintage; run the main harness directly.
 jars=[p for p in artifacts.values() if '/org/hibernate/hibernate-core/' not in p.as_posix() and not p.name.startswith(('liquibase','spring-data-redis','spring-data-keyvalue','spring-boot-starter-data-redis','spring-boot-devtools','log4j-slf4j','slf4j-simple','slf4j-log4j','jcl-over-slf4j','commons-logging','junit-vintage'))]
+# Preserve the dependency set of the previously prepared lab runtime. Scanning a
+# growing Maven cache can otherwise mix newer auto-configurations with older Boot.
+prepared_classpath=root/'target/cached-runtime/classpath.txt'
+if prepared_classpath.exists():
+ prepared_jars=[Path(p) for p in prepared_classpath.read_text(encoding='utf-8').strip().split(';') if p.endswith('.jar')]
+ if prepared_jars and all(p.is_file() for p in prepared_jars):jars=prepared_jars
 classpath=';'.join(map(str,jars))
 def call(args):
  result=subprocess.run([str(a) for a in args],cwd=root)
@@ -48,7 +54,10 @@ cp=classpath+';'+str(root/'target/classes')+';'+str(testout)
 (cache/'classpath.txt').write_text(classpath,encoding='utf-8')
 verification_env=os.environ.copy()
 verification_env.update({'OTEL_SDK_DISABLED':'true','DOTNET_CLI_TELEMETRY_OPTOUT':'1','POWERSHELL_TELEMETRY_OPTOUT':'1'})
-result=subprocess.run([str(java/'java.exe'),'-Djava.security.manager=allow','-Dorg.springframework.boot.logging.LoggingSystem=none','-Didp.verification-mode=cached-compatibility','-cp',cp,'vn.kma.idp.IntegrationChecks'],cwd=root,env=verification_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,encoding='utf-8',errors='replace')
+# Use a Java argument file: a populated Maven cache can exceed Windows' command-line limit.
+run_args=cache/'integration-runtime.args'
+run_args.write_text('\n'.join(['-Djava.security.manager=allow','-Dorg.springframework.boot.logging.LoggingSystem=none','-Didp.verification-mode=cached-compatibility','-cp','"'+cp.replace('\\','/')+'"','vn.kma.idp.IntegrationChecks']),encoding='utf-8')
+result=subprocess.run([str(java/'java.exe'),'@'+str(run_args)],cwd=root,env=verification_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,encoding='utf-8',errors='replace')
 log_path=root/'target/offline-verification.log'
 log_path.write_text(result.stdout,encoding='utf-8')
 print('\n'.join(result.stdout.splitlines()[-45:]))
