@@ -133,7 +133,7 @@ Nhấn Ctrl+C để dừng BE. Không cần xóa database.
 <!-- TEST_RESULTS_START -->
 ## Kết quả kiểm thử tự động gần nhất
 
-Thời điểm UTC: `2026-11-25T14:51:38.488231900Z`. Chế độ: `cached-compatibility`. Tổng kiểm tra: **291**; số request được ghi riêng: **287**.
+Thời điểm UTC: `2026-11-25T14:57:40.268364100Z`. Chế độ: `cached-compatibility`. Tổng kiểm tra: **291**; số request được ghi riêng: **287**.
 
 Môi trường: MockMvc + real Spring Security filters; H2 in memory. Đây là kết quả của danh mục đã viết, không có nghĩa mọi case có thể tồn tại đều đã kiểm tra.
 

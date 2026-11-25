@@ -1,2308 +1,2308 @@
 {
-  "transport": "MockMvc + real Spring Security filters",
   "cases": [
     {
       "path": "/api/v1/status",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC001",
       "actual": 200,
-      "id": "TC001"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC002",
       "actual": 401,
-      "id": "TC002"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC003",
       "actual": 200,
-      "id": "TC003"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC004",
       "actual": 401,
-      "id": "TC004"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC005",
       "actual": 401,
-      "id": "TC005"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC006",
       "actual": 401,
-      "id": "TC006"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/management/catalog",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC007",
       "actual": 200,
-      "id": "TC007"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/organization",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC008",
       "actual": 200,
-      "id": "TC008"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/person",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC009",
       "actual": 200,
-      "id": "TC009"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/identity",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC010",
       "actual": 200,
-      "id": "TC010"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/org_membership",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC011",
       "actual": 200,
-      "id": "TC011"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/account",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC012",
       "actual": 200,
-      "id": "TC012"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/external_identity",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC013",
       "actual": 200,
-      "id": "TC013"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/credential",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC014",
       "actual": 200,
-      "id": "TC014"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/webauthn_credential",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC015",
       "actual": 200,
-      "id": "TC015"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/webauthn_challenge",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC016",
       "actual": 200,
-      "id": "TC016"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/totp_credential",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC017",
       "actual": 200,
-      "id": "TC017"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/recovery_code",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC018",
       "actual": 200,
-      "id": "TC018"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/account_activation_token",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC019",
       "actual": 200,
-      "id": "TC019"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/org_role",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC020",
       "actual": 200,
-      "id": "TC020"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/org_role_assignment",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC021",
       "actual": 200,
-      "id": "TC021"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/role",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC022",
       "actual": 200,
-      "id": "TC022"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/permission",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC023",
       "actual": 200,
-      "id": "TC023"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/role_permission",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC024",
       "actual": 200,
-      "id": "TC024"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/account_role_assignment",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC025",
       "actual": 200,
-      "id": "TC025"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/application",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC026",
       "actual": 200,
-      "id": "TC026"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/client_redirect_uri",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC027",
       "actual": 200,
-      "id": "TC027"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/client_logout_uri",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC028",
       "actual": 200,
-      "id": "TC028"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/client_credential",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC029",
       "actual": 200,
-      "id": "TC029"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/oidc_scope",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC030",
       "actual": 200,
-      "id": "TC030"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/application_scope",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC031",
       "actual": 200,
-      "id": "TC031"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/client_grant_type",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC032",
       "actual": 200,
-      "id": "TC032"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/signing_key",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC033",
       "actual": 200,
-      "id": "TC033"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/idp_session",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC034",
       "actual": 200,
-      "id": "TC034"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/session_client",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC035",
       "actual": 200,
-      "id": "TC035"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/authentication_event",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC036",
       "actual": 200,
-      "id": "TC036"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/authorization_code",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC037",
       "actual": 200,
-      "id": "TC037"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/authorization_code_scope",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC038",
       "actual": 200,
-      "id": "TC038"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/refresh_token",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC039",
       "actual": 200,
-      "id": "TC039"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/refresh_token_scope",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC040",
       "actual": 200,
-      "id": "TC040"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/user_consent",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC041",
       "actual": 200,
-      "id": "TC041"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/user_consent_scope",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC042",
       "actual": 200,
-      "id": "TC042"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/security_policy",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC043",
       "actual": 200,
-      "id": "TC043"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/audit_log",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC044",
       "actual": 200,
-      "id": "TC044"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/smart_card_credential",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC045",
       "actual": 200,
-      "id": "TC045"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/smart_card_challenge",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC046",
       "actual": 200,
-      "id": "TC046"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/authentication_transaction",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC047",
       "actual": 200,
-      "id": "TC047"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/outbox_event",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC048",
       "actual": 200,
-      "id": "TC048"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/credential",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC049",
       "actual": 200,
-      "id": "TC049"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC050",
       "actual": 200,
-      "id": "TC050"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/accounts/{id}/lock",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC051",
       "actual": 409,
-      "id": "TC051"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/accounts",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC052",
       "actual": 200,
-      "id": "TC052"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/accounts/{id}/smart-cards",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC053",
       "actual": 200,
-      "id": "TC053"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/challenge",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC054",
       "actual": 200,
-      "id": "TC054"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC055",
       "actual": 401,
-      "id": "TC055"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/smart-card/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC056",
       "actual": 200,
-      "id": "TC056"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC057",
       "actual": 410,
-      "id": "TC057"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC058",
       "actual": 200,
-      "id": "TC058"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/overview",
-      "expected": 403,
-      "method": "GET",
-      "passed": true,
+      "id": "TC059",
       "actual": 403,
-      "id": "TC059"
+      "passed": true,
+      "method": "GET",
+      "expected": 403
     },
     {
       "path": "/api/v1/me/sessions/{id}",
-      "expected": 404,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC060",
       "actual": 404,
-      "id": "TC060"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 404
     },
     {
       "path": "/api/v1/auth/refresh",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC061",
       "actual": 200,
-      "id": "TC061"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/refresh",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC062",
       "actual": 401,
-      "id": "TC062"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC063",
       "actual": 401,
-      "id": "TC063"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/smart-card/challenge",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC064",
       "actual": 200,
-      "id": "TC064"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC065",
       "actual": 410,
-      "id": "TC065"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/accounts/{id}/lock",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC066",
       "actual": 200,
-      "id": "TC066"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/challenge",
-      "expected": 423,
-      "method": "POST",
-      "passed": true,
+      "id": "TC067",
       "actual": 423,
-      "id": "TC067"
+      "passed": true,
+      "method": "POST",
+      "expected": 423
     },
     {
       "path": "/api/v1/accounts/{id}/unlock",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC068",
       "actual": 200,
-      "id": "TC068"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/challenge",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC069",
       "actual": 200,
-      "id": "TC069"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC070",
       "actual": 401,
-      "id": "TC070"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/smart-card/challenge",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC071",
       "actual": 401,
-      "id": "TC071"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/accounts/credentials/{id}",
-      "expected": 200,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC072",
       "actual": 200,
-      "id": "TC072"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/smart-card/challenge",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC073",
       "actual": 401,
-      "id": "TC073"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC074",
       "actual": 200,
-      "id": "TC074"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC075",
       "actual": 401,
-      "id": "TC075"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC076",
       "actual": 401,
-      "id": "TC076"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC077",
       "actual": 401,
-      "id": "TC077"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC078",
       "actual": 401,
-      "id": "TC078"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC079",
       "actual": 401,
-      "id": "TC079"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC080",
       "actual": 401,
-      "id": "TC080"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/accounts/{id}/unlock",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC081",
       "actual": 200,
-      "id": "TC081"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC082",
       "actual": 401,
-      "id": "TC082"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/management/resources/permission/{id}",
-      "expected": 409,
-      "method": "PATCH",
-      "passed": true,
+      "id": "TC083",
       "actual": 409,
-      "id": "TC083"
+      "passed": true,
+      "method": "PATCH",
+      "expected": 409
     },
     {
       "path": "/api/v1/management/resources/unknown_table",
-      "expected": 404,
-      "method": "GET",
-      "passed": true,
+      "id": "TC084",
       "actual": 404,
-      "id": "TC084"
+      "passed": true,
+      "method": "GET",
+      "expected": 404
     },
     {
       "path": "/api/v1/management/resources/credential",
-      "expected": 405,
-      "method": "POST",
-      "passed": true,
+      "id": "TC085",
       "actual": 405,
-      "id": "TC085"
+      "passed": true,
+      "method": "POST",
+      "expected": 405
     },
     {
       "path": "/api/v1/management/resources/application",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC086",
       "actual": 200,
-      "id": "TC086"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/management/resources/application/{id}",
-      "expected": 400,
+      "id": "TC087",
+      "actual": 400,
+      "passed": true,
       "method": "PATCH",
-      "passed": true,
-      "actual": 400,
-      "id": "TC087"
+      "expected": 400
     },
     {
       "path": "/api/v1/management/resources/client_redirect_uri",
-      "expected": 400,
-      "method": "POST",
-      "passed": true,
+      "id": "TC088",
       "actual": 400,
-      "id": "TC088"
+      "passed": true,
+      "method": "POST",
+      "expected": 400
     },
     {
       "path": "/api/v1/management/resources/client_redirect_uri",
-      "expected": 400,
-      "method": "POST",
-      "passed": true,
+      "id": "TC089",
       "actual": 400,
-      "id": "TC089"
+      "passed": true,
+      "method": "POST",
+      "expected": 400
     },
     {
       "path": "/api/v1/management/resources/security_policy",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC090",
       "actual": 409,
-      "id": "TC090"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC091",
       "actual": 200,
-      "id": "TC091"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC092",
       "actual": 200,
-      "id": "TC092"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Live grant takes effect with existing access token",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC093",
       "actual": true,
-      "id": "TC093"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC094",
       "actual": 200,
-      "id": "TC094"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Revoked grant disappears without waiting for JWT expiry",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC095",
       "actual": true,
-      "id": "TC095"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Organization grant cannot become a global grant",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC096",
       "actual": true,
-      "id": "TC096"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Organization grant matches its own scope",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC097",
       "actual": true,
-      "id": "TC097"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Organization grant cannot cross organization",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC098",
       "actual": true,
-      "id": "TC098"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Expired scoped assignment is denied",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC099",
       "actual": true,
-      "id": "TC099"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC100",
       "actual": 401,
-      "id": "TC100"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/refresh",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC101",
       "actual": 401,
-      "id": "TC101"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC102",
       "actual": 200,
-      "id": "TC102"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/refresh",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC103",
       "actual": 401,
-      "id": "TC103"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "Last authenticator cannot be removed",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC104",
       "actual": true,
-      "id": "TC104"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "RFC6238 SHA1 vector 59",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC105",
       "actual": true,
-      "id": "TC105"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "RFC6238 SHA1 vector 1111111109",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC106",
       "actual": true,
-      "id": "TC106"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "RFC6238 SHA1 vector 1111111111",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC107",
       "actual": true,
-      "id": "TC107"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "RFC6238 SHA1 vector 1234567890",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC108",
       "actual": true,
-      "id": "TC108"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "RFC6238 SHA1 vector 2000000000",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC109",
       "actual": true,
-      "id": "TC109"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "RFC6238 SHA1 vector 20000000000",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC110",
       "actual": true,
-      "id": "TC110"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "AES-GCM round trip",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC111",
       "actual": true,
-      "id": "TC111"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "AES-GCM AAD swap rejected",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC112",
       "actual": true,
-      "id": "TC112"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me/totp/setup",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC113",
       "actual": 403,
-      "id": "TC113"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts/{id}/activation-invite",
-      "expected": 202,
-      "method": "POST",
-      "passed": true,
+      "id": "TC114",
       "actual": 202,
-      "id": "TC114"
+      "passed": true,
+      "method": "POST",
+      "expected": 202
     },
     {
       "path": "Activation hash only",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC115",
       "actual": true,
-      "id": "TC115"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/activate",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC116",
       "actual": 200,
-      "id": "TC116"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/activate",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC117",
       "actual": 410,
-      "id": "TC117"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
+      "id": "TC118",
+      "actual": 401,
+      "passed": true,
       "method": "GET",
-      "passed": true,
-      "actual": 401,
-      "id": "TC118"
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/enrollment/totp/setup",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC119",
       "actual": 200,
-      "id": "TC119"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/enrollment/totp/setup",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC120",
       "actual": 409,
-      "id": "TC120"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/auth/enrollment/totp/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC121",
       "actual": 401,
-      "id": "TC121"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/enrollment/totp/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC122",
       "actual": 200,
-      "id": "TC122"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "Recovery codes shown once at enrollment",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC123",
       "actual": true,
-      "id": "TC123"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me/totp",
-      "expected": 409,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC124",
       "actual": 409,
-      "id": "TC124"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 409
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC125",
       "actual": 401,
-      "id": "TC125"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/password",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC126",
       "actual": 200,
-      "id": "TC126"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "Primary factor alone grants no access token",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC127",
       "actual": true,
-      "id": "TC127"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/mfa/totp/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC128",
       "actual": 401,
-      "id": "TC128"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/mfa/totp/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC129",
       "actual": 200,
-      "id": "TC129"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/mfa/totp/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC130",
       "actual": 410,
-      "id": "TC130"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "MFA session AAL2",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC131",
       "actual": true,
-      "id": "TC131"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "TOTP secret encrypted",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC132",
       "actual": true,
-      "id": "TC132"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/otp/request",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC133",
       "actual": 200,
-      "id": "TC133"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/local-mailbox/{id}",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC134",
       "actual": 200,
-      "id": "TC134"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Outbox payload encrypted",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC135",
       "actual": true,
-      "id": "TC135"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/otp/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC136",
       "actual": 401,
-      "id": "TC136"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/otp/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC137",
       "actual": 200,
-      "id": "TC137"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/otp/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC138",
       "actual": 410,
-      "id": "TC138"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/auth/otp/request",
-      "expected": 429,
-      "method": "POST",
-      "passed": true,
+      "id": "TC139",
       "actual": 429,
-      "id": "TC139"
+      "passed": true,
+      "method": "POST",
+      "expected": 429
     },
     {
       "path": "/api/v1/auth/otp/request",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC140",
       "actual": 200,
-      "id": "TC140"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me/recovery-codes/regenerate",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC141",
       "actual": 200,
-      "id": "TC141"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/recovery/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC142",
       "actual": 401,
-      "id": "TC142"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/recovery/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC143",
       "actual": 200,
-      "id": "TC143"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/recovery/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC144",
       "actual": 401,
-      "id": "TC144"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC145",
       "actual": 401,
-      "id": "TC145"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/enrollment/totp/setup",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC146",
       "actual": 200,
-      "id": "TC146"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/enrollment/totp/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC147",
       "actual": 200,
-      "id": "TC147"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/enrollment/totp/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC148",
       "actual": 410,
-      "id": "TC148"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/me/totp",
-      "expected": 409,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC149",
       "actual": 409,
-      "id": "TC149"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 409
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC150",
       "actual": 200,
-      "id": "TC150"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/permissions",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC151",
       "actual": 200,
-      "id": "TC151"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Permission catalog offers actual enforced codes only",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC152",
       "actual": true,
-      "id": "TC152"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/roles?size=101",
-      "expected": 400,
-      "method": "GET",
-      "passed": true,
+      "id": "TC153",
       "actual": 400,
-      "id": "TC153"
+      "passed": true,
+      "method": "GET",
+      "expected": 400
     },
     {
       "path": "/api/v1/roles",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC154",
       "actual": 201,
-      "id": "TC154"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "/api/v1/roles",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC155",
       "actual": 409,
-      "id": "TC155"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/roles/{id}",
-      "expected": 409,
+      "id": "TC156",
+      "actual": 409,
+      "passed": true,
       "method": "PATCH",
-      "passed": true,
-      "actual": 409,
-      "id": "TC156"
+      "expected": 409
     },
     {
       "path": "/api/v1/roles/{id}/permissions",
-      "expected": 409,
-      "method": "PUT",
-      "passed": true,
+      "id": "TC157",
       "actual": 409,
-      "id": "TC157"
+      "passed": true,
+      "method": "PUT",
+      "expected": 409
     },
     {
       "path": "/api/v1/roles/{id}/permissions",
-      "expected": 200,
-      "method": "PUT",
-      "passed": true,
+      "id": "TC158",
       "actual": 200,
-      "id": "TC158"
+      "passed": true,
+      "method": "PUT",
+      "expected": 200
     },
     {
       "path": "/api/v1/roles/{id}/permissions",
-      "expected": 400,
-      "method": "PUT",
-      "passed": true,
+      "id": "TC159",
       "actual": 400,
-      "id": "TC159"
+      "passed": true,
+      "method": "PUT",
+      "expected": 400
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC160",
       "actual": 201,
-      "id": "TC160"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC161",
       "actual": 409,
-      "id": "TC161"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 400,
-      "method": "POST",
-      "passed": true,
+      "id": "TC162",
       "actual": 400,
-      "id": "TC162"
+      "passed": true,
+      "method": "POST",
+      "expected": 400
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 400,
-      "method": "POST",
-      "passed": true,
+      "id": "TC163",
       "actual": 400,
-      "id": "TC163"
+      "passed": true,
+      "method": "POST",
+      "expected": 400
     },
     {
       "path": "/api/v1/roles",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC164",
       "actual": 200,
-      "id": "TC164"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/roles",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC165",
       "actual": 403,
-      "id": "TC165"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/roles/{id}/permissions",
-      "expected": 403,
-      "method": "PUT",
-      "passed": true,
+      "id": "TC166",
       "actual": 403,
-      "id": "TC166"
+      "passed": true,
+      "method": "PUT",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC167",
       "actual": 403,
-      "id": "TC167"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts/{id}/lock",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC168",
       "actual": 403,
-      "id": "TC168"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts/credentials/{id}",
-      "expected": 403,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC169",
       "actual": 403,
-      "id": "TC169"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC170",
       "actual": 200,
-      "id": "TC170"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/accounts/{id}/lock",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC171",
       "actual": 200,
-      "id": "TC171"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/accounts/{id}/unlock",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC172",
       "actual": 200,
-      "id": "TC172"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/roles",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC173",
       "actual": 201,
-      "id": "TC173"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "/api/v1/roles/{id}/permissions",
-      "expected": 200,
-      "method": "PUT",
-      "passed": true,
+      "id": "TC174",
       "actual": 200,
-      "id": "TC174"
+      "passed": true,
+      "method": "PUT",
+      "expected": 200
     },
     {
       "path": "/api/v1/roles/{id}",
-      "expected": 403,
-      "method": "PATCH",
-      "passed": true,
+      "id": "TC175",
       "actual": 403,
-      "id": "TC175"
+      "passed": true,
+      "method": "PATCH",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC176",
       "actual": 403,
-      "id": "TC176"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/role-assignments/{id}",
-      "expected": 200,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC177",
       "actual": 200,
-      "id": "TC177"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 200
     },
     {
       "path": "/api/v1/accounts/{id}/lock",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC178",
       "actual": 403,
-      "id": "TC178"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC179",
       "actual": 200,
-      "id": "TC179"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Role revocation affects an existing token immediately",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC180",
       "actual": true,
-      "id": "TC180"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/role-assignments/{id}",
-      "expected": 409,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC181",
       "actual": 409,
-      "id": "TC181"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 409
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC182",
       "actual": 201,
-      "id": "TC182"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "Canonical scoped assignment cannot grant global rights",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC183",
       "actual": true,
-      "id": "TC183"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Canonical scoped assignment matches its own organization",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC184",
       "actual": true,
-      "id": "TC184"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Organization grant cannot cross into application scope",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC185",
       "actual": true,
-      "id": "TC185"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC186",
       "actual": 403,
-      "id": "TC186"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC187",
       "actual": 403,
-      "id": "TC187"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/role-assignments/{id}",
-      "expected": 200,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC188",
       "actual": 200,
-      "id": "TC188"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 200
     },
     {
       "path": "/api/v1/accounts/{id}/role-assignments",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC189",
       "actual": 201,
-      "id": "TC189"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "/api/v1/accounts/{id}/lock",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC190",
       "actual": 409,
-      "id": "TC190"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/role-assignments/{id}",
-      "expected": 200,
+      "id": "TC191",
+      "actual": 200,
+      "passed": true,
       "method": "DELETE",
-      "passed": true,
-      "actual": 200,
-      "id": "TC191"
+      "expected": 200
     },
     {
       "path": "/api/v1/me/webauthn/registration/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC192",
       "actual": 200,
-      "id": "TC192"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me/webauthn/registration/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC193",
       "actual": 401,
-      "id": "TC193"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/me/webauthn/registration/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC194",
       "actual": 410,
-      "id": "TC194"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/me/webauthn/registration/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC195",
       "actual": 200,
-      "id": "TC195"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me/webauthn/registration/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC196",
       "actual": 401,
-      "id": "TC196"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/me/webauthn/registration/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC197",
       "actual": 200,
-      "id": "TC197"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me/webauthn/registration/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC198",
       "actual": 200,
-      "id": "TC198"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me/webauthn/registration/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC199",
       "actual": 410,
-      "id": "TC199"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "WebAuthn COSE public key and attested data persisted",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC200",
       "actual": true,
-      "id": "TC200"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me/webauthn/registration/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC201",
       "actual": 200,
-      "id": "TC201"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me/webauthn/registration/verify",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC202",
       "actual": 409,
-      "id": "TC202"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC203",
       "actual": 200,
-      "id": "TC203"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC204",
       "actual": 200,
-      "id": "TC204"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC205",
       "actual": 200,
-      "id": "TC205"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC206",
       "actual": 200,
-      "id": "TC206"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "WebAuthn permits zero counters across distinct valid ceremonies",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC207",
       "actual": true,
-      "id": "TC207"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC208",
       "actual": 200,
-      "id": "TC208"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "WebAuthn requests required UV",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC209",
       "actual": true,
-      "id": "TC209"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC210",
       "actual": 401,
-      "id": "TC210"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC211",
       "actual": 200,
-      "id": "TC211"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC212",
       "actual": 401,
-      "id": "TC212"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC213",
       "actual": 200,
-      "id": "TC213"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC214",
       "actual": 401,
-      "id": "TC214"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC215",
       "actual": 200,
-      "id": "TC215"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC216",
       "actual": 401,
-      "id": "TC216"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC217",
       "actual": 200,
-      "id": "TC217"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC218",
       "actual": 200,
-      "id": "TC218"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "WebAuthn UV session has AAL2",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC219",
       "actual": true,
-      "id": "TC219"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
+      "id": "TC220",
+      "actual": 200,
+      "passed": true,
       "method": "GET",
-      "passed": true,
-      "actual": 200,
-      "id": "TC220"
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC221",
       "actual": 410,
-      "id": "TC221"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC222",
       "actual": 200,
-      "id": "TC222"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC223",
       "actual": 401,
-      "id": "TC223"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC224",
       "actual": 200,
-      "id": "TC224"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC225",
       "actual": 401,
-      "id": "TC225"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC226",
       "actual": 401,
-      "id": "TC226"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC227",
       "actual": 401,
-      "id": "TC227"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC228",
       "actual": 200,
-      "id": "TC228"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC229",
       "actual": 410,
-      "id": "TC229"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC230",
       "actual": 200,
-      "id": "TC230"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC231",
       "actual": 401,
-      "id": "TC231"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 410,
-      "method": "POST",
-      "passed": true,
+      "id": "TC232",
       "actual": 410,
-      "id": "TC232"
+      "passed": true,
+      "method": "POST",
+      "expected": 410
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC233",
       "actual": 200,
-      "id": "TC233"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "Concurrent WebAuthn proof yields exactly one session and one consumed challenge",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC234",
       "actual": true,
-      "id": "TC234"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC235",
       "actual": 200,
-      "id": "TC235"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/auth/webauthn/verify",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC236",
       "actual": 401,
-      "id": "TC236"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 401,
-      "method": "POST",
-      "passed": true,
+      "id": "TC237",
       "actual": 401,
-      "id": "TC237"
+      "passed": true,
+      "method": "POST",
+      "expected": 401
     },
     {
       "path": "/api/v1/auth/webauthn/options",
-      "expected": 429,
-      "method": "POST",
-      "passed": true,
+      "id": "TC238",
       "actual": 429,
-      "id": "TC238"
+      "passed": true,
+      "method": "POST",
+      "expected": 429
     },
     {
       "path": "Outbox successful delivery is not dispatched twice",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC239",
       "actual": true,
-      "id": "TC239"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Outbox failure schedules bounded retry",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC240",
       "actual": true,
-      "id": "TC240"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Outbox cannot claim before backoff elapsed",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC241",
       "actual": true,
-      "id": "TC241"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Outbox becomes DEAD after five delivery failures",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC242",
       "actual": true,
-      "id": "TC242"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "DEAD outbox item cannot be claimed",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC243",
       "actual": true,
-      "id": "TC243"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Only one worker claims an outbox item",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC244",
       "actual": true,
-      "id": "TC244"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Expired worker lease can be recovered",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC245",
       "actual": true,
-      "id": "TC245"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Expired final lease does not cause unlimited retries",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC246",
       "actual": true,
-      "id": "TC246"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Recovered outbox item requires current claim version",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC247",
       "actual": true,
-      "id": "TC247"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Stale worker cannot acknowledge or fail another claim",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC248",
       "actual": true,
-      "id": "TC248"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Current outbox worker can acknowledge its own claim",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC249",
       "actual": true,
-      "id": "TC249"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "Outbox stores encrypted notification bodies only",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC250",
       "actual": true,
-      "id": "TC250"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me/credentials",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC251",
       "actual": 200,
-      "id": "TC251"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Own credential API excludes all secrets and public-key payloads",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC252",
       "actual": true,
-      "id": "TC252"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me/credentials/{id}",
-      "expected": 404,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC253",
       "actual": 404,
-      "id": "TC253"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 404
     },
     {
       "path": "/api/v1/me/credentials/{id}",
-      "expected": 403,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC254",
       "actual": 403,
-      "id": "TC254"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 403
     },
     {
       "path": "/api/v1/me/credentials/{id}",
-      "expected": 200,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC255",
       "actual": 200,
-      "id": "TC255"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC256",
       "actual": 401,
-      "id": "TC256"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC257",
       "actual": 401,
-      "id": "TC257"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "Self revoke updates credential state",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC258",
       "actual": true,
-      "id": "TC258"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me/credentials/{id}",
-      "expected": 409,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC259",
       "actual": 409,
-      "id": "TC259"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 409
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC260",
       "actual": 200,
-      "id": "TC260"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/logout",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC261",
       "actual": 200,
-      "id": "TC261"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC262",
       "actual": 401,
-      "id": "TC262"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/signing-keys",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC263",
       "actual": 200,
-      "id": "TC263"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Signing key metadata excludes private references",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC264",
       "actual": true,
-      "id": "TC264"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/signing-keys",
-      "expected": 403,
+      "id": "TC265",
+      "actual": 403,
+      "passed": true,
       "method": "GET",
-      "passed": true,
-      "actual": 403,
-      "id": "TC265"
+      "expected": 403
     },
     {
       "path": "/api/v1/signing-keys/prepare",
-      "expected": 403,
-      "method": "POST",
-      "passed": true,
+      "id": "TC266",
       "actual": 403,
-      "id": "TC266"
+      "passed": true,
+      "method": "POST",
+      "expected": 403
     },
     {
       "path": "/api/v1/signing-keys/prepare",
-      "expected": 400,
-      "method": "POST",
-      "passed": true,
+      "id": "TC267",
       "actual": 400,
-      "id": "TC267"
+      "passed": true,
+      "method": "POST",
+      "expected": 400
     },
     {
       "path": "/api/v1/signing-keys/prepare",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC268",
       "actual": 201,
-      "id": "TC268"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "/oauth2/jwks",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC269",
       "actual": 200,
-      "id": "TC269"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "NEXT key pre-published alongside active key",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC270",
       "actual": true,
-      "id": "TC270"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "JWKS contains public parameters only",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC271",
       "actual": true,
-      "id": "TC271"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/signing-keys/rotate",
-      "expected": 400,
-      "method": "POST",
-      "passed": true,
+      "id": "TC272",
       "actual": 400,
-      "id": "TC272"
+      "passed": true,
+      "method": "POST",
+      "expected": 400
     },
     {
       "path": "/api/v1/signing-keys/rotate",
-      "expected": 201,
-      "method": "POST",
-      "passed": true,
+      "id": "TC273",
       "actual": 201,
-      "id": "TC273"
+      "passed": true,
+      "method": "POST",
+      "expected": 201
     },
     {
       "path": "Rotation changes active kid",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC274",
       "actual": true,
-      "id": "TC274"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC275",
       "actual": 200,
-      "id": "TC275"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "New tokens use rotated signing key",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC276",
       "actual": true,
-      "id": "TC276"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/signing-keys/rotate",
-      "expected": 409,
-      "method": "POST",
-      "passed": true,
+      "id": "TC277",
       "actual": 409,
-      "id": "TC277"
+      "passed": true,
+      "method": "POST",
+      "expected": 409
     },
     {
       "path": "/api/v1/signing-keys/{id}",
-      "expected": 409,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC278",
       "actual": 409,
-      "id": "TC278"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 409
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC279",
       "actual": 401,
-      "id": "TC279"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC280",
       "actual": 200,
-      "id": "TC280"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/oauth2/jwks",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC281",
       "actual": 200,
-      "id": "TC281"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "Retired key disappears after overlap expiry",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC282",
       "actual": true,
-      "id": "TC282"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/signing-keys/{id}",
-      "expected": 200,
-      "method": "DELETE",
-      "passed": true,
+      "id": "TC283",
       "actual": 200,
-      "id": "TC283"
+      "passed": true,
+      "method": "DELETE",
+      "expected": 200
     },
     {
       "path": "/api/v1/me",
-      "expected": 401,
-      "method": "GET",
-      "passed": true,
+      "id": "TC284",
       "actual": 401,
-      "id": "TC284"
+      "passed": true,
+      "method": "GET",
+      "expected": 401
     },
     {
       "path": "Emergency retired-key revocation revokes every active session",
-      "expected": true,
-      "method": "ASSERT",
-      "passed": true,
+      "id": "TC285",
       "actual": true,
-      "id": "TC285"
+      "passed": true,
+      "method": "ASSERT",
+      "expected": true
     },
     {
       "path": "/api/v1/me",
-      "expected": 200,
-      "method": "GET",
-      "passed": true,
+      "id": "TC286",
       "actual": 200,
-      "id": "TC286"
+      "passed": true,
+      "method": "GET",
+      "expected": 200
     },
     {
       "path": "/api/v1/logout",
-      "expected": 200,
-      "method": "POST",
-      "passed": true,
+      "id": "TC287",
       "actual": 200,
-      "id": "TC287"
+      "passed": true,
+      "method": "POST",
+      "expected": 200
     }
   ],
-  "recordedAt": "2026-11-25T14:51:38.488231900Z",
-  "totalChecks": 291,
-  "allRecordedCasesPassed": true,
-  "mode": "cached-compatibility",
+  "transport": "MockMvc + real Spring Security filters",
   "database": "H2 in memory",
+  "mode": "cached-compatibility",
+  "allRecordedCasesPassed": true,
+  "totalChecks": 291,
+  "recordedAt": "2026-11-25T14:57:40.268364100Z",
   "sourceSha256": "b5577c9ab7e1c25ba08a5c89454f3ae5869cdf60e798916f1a70020dd32a48be",
   "dependencies": [
     {
